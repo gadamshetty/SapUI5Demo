@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.ui.commons, sap.ui.ux3"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-resourceroots = '{
+					"stanmedpharma": "./stanmedpharma",
+					"sap.stanmed": "./"
+				}'>
+		</script>
+		<!-- add sap.ui.table,sap.ui.ux3 and/or other libraries to 'data-sap-ui-libs' if required -->
+
+		<script>
+				jQuery.sap.require("sap.ui.core.routing.Router");
+				jQuery.sap.require("sap.ui.core.routing.HashChanger");
+				sap.ui.localResources("stanmedpharma");
+				
+				
+				 
+				var comp1 = new sap.ui.core.ComponentContainer({
+						name: 'sap.stanmed'
+					});
+				
+				comp1.placeAt("content");
+				
+				                          				
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
